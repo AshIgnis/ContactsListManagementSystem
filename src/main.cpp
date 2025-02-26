@@ -1,16 +1,28 @@
 #include <iostream>
 #include "menu.h"
+#include "adding.h"
+#include "showing.h"
+#include "deleting.h"
+#include "searching.h"
+#include "modifying.h"
+#include "clearing.h"
+#include "addressbooks.h"
 
 using namespace std;
+
 int main(){
+    AddressBooks abs;
+    abs.m_Size = 0;
+
     int select = 0;
+
     while(1){
         showMenu();//菜单调用
         cout << "请输入您的选择：";
         cin >> select;
         switch(select){
             case 1: //添加联系人
-                
+                addPerson(&abs); //地址传递修改值
                 break;
             case 2: //显示联系人
                 
