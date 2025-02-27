@@ -1,3 +1,5 @@
+[![Build Status](https://www.travis-ci.org/{your-name}/{your-repo-name}.svg?branch=master)]
+(https://www.travis-ci.org/{your-name}/{your-repo-name})
 # Contacts List Management System
 
 This is a simple contacts list management system that allows users to add, display, delete, search, modify, and clear contacts. (For simple project practice.Learn form https://www.bilibili.com/video/BV1et411b73Z?spm_id_from=333.788.videopod.episodes&vd_source=cfd41efb9ad31bbd65dff5da1d47978a&p=72)
