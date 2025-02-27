@@ -28,7 +28,7 @@ int main(){
                 showPerson(&abs);
                 break;
             case 3: //删除联系人
-                
+                deletePerson(&abs);
                 break;
             case 4: //查找联系人
                 
