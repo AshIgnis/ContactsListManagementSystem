@@ -1,5 +1,6 @@
 #include "adding.h"
 #include <iostream>
+#include <string>
 using namespace std;
 
 void addPerson(AddressBooks *abs) {
@@ -11,15 +12,17 @@ void addPerson(AddressBooks *abs) {
     // 添加联系人
     Person p;
     cout << "请输入姓名：" << endl;
-    cin >> p.m_Name;
+    cin.ignore(); // 清除输入缓冲区
+    getline(cin, p.m_Name);
     cout << "请输入性别：" << endl;
-    cin >> p.m_Sex;
+    getline(cin, p.m_Sex);
     cout << "请输入年龄：" << endl;
     cin >> p.m_Age;
+    cin.ignore(); // 清除输入缓冲区
     cout << "请输入电话：" << endl;
-    cin >> p.m_Phone;
+    getline(cin, p.m_Phone);
     cout << "请输入住址：" << endl;
-    cin >> p.m_Addr;
+    getline(cin, p.m_Addr);
 
     // 将联系人添加到通讯录中
     abs->personArray[abs->m_Size] = p;
