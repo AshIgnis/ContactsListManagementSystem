@@ -25,7 +25,7 @@ int main(){
                 addPerson(&abs); //地址传递修改值
                 break;
             case 2: //显示联系人
-                
+                showPerson(&abs);
                 break;
             case 3: //删除联系人
                 
