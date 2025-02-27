@@ -34,7 +34,7 @@ int main(){
                 findPerson(&abs);
                 break;
             case 5: // 修改联系人
-                
+                modifyPerson(&abs);
                 break;
             case 6: //清空联系人
                 
